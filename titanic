@@ -14,8 +14,8 @@ pipeline = Pipeline(steps)
 parameters = {'logreg__C':[0.001, 0.01, 0.1, 1, 10, 100, 1000]}
 
 #Load Datasets
-train = pd.read_csv(r'C:\Users\tioxr\Downloads\train.csv')
-test = pd.read_csv(r'C:\Users\tioxr\Downloads\test.csv')
+train = pd.read_csv(trainfilename)
+test = pd.read_csv(testfilename)
 
 
 #imputing Median age of gender in to NaN values
